@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// Created on: Sept-2018
+// Created by: Ethan Bellem
+// Created for: ICS3U
+// program will get the adress re-print it
+// this will be commented out when code moved to Xcode
+
+show("do you have an apartment number")
+let apartmentNumber = askForNumber("enter apartment number if you have one otherwise enter 0")
+
+show("enter your street name and number")
+let street = ask("street name and number")
+
+show("enter your city name")
+let city = ask("city name")
+
+show("enter your province or state name")
+let provinceOrState = ask("province / state name")
+
+show("enter your postal code")
+let postalCode = ask("postal code ")
+
+func printAdress() {
+    // will print back adress in right order
+    if apartmentNumber == 0{
+        show("your adress is \(street), \(city), \(provinceOrState), \(postalCode)")
+    }else{
+        show ("your adress is, appartment \(apartmentNumber), \(street), \(city), \(provinceOrState), \(postalCode)")
+    }
+    
+}
+
+if postalCode != nil{
+    printAdress()
+}
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{145, 983}</string>
+			<key>OriginalContent</key>
+			<string>show("What is your name?")
+
+let name = ask("Name")
+
+show("Hi " + name)
+</string>
+			<key>OriginalRange</key>
+			<string>{145, 71}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Answers.playgroundchapter/Pages/Text.playgroundpage/Contents.swift</string>
+</dict>
+</plist>
